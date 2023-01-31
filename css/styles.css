@@ -42,9 +42,11 @@ button {
 }
 
 .container {
-    width: 1128px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .visually-hidden {
@@ -111,15 +113,6 @@ body {
     color: var(--accent-bg-cl);
 }
 
-.address-link {
-    color: var(--secondary-txt-cl);
-    text-decoration: none;
-    font-style: normal;
-    line-height: calc(24 / 16);
-    cursor: pointer;
-    margin-right: 40px;
-}
-
 .address-list {
     color: var(--secondary-txt-cl);
     text-decoration: none;
@@ -127,7 +120,16 @@ body {
     line-height: calc(24 / 16);
     cursor: pointer;
     display: flex;
-    margin-left: 332px;
+    margin-left: auto;  
+    gap: 40px;
+}
+
+.address-link {
+    color: var(--secondary-txt-cl);
+    text-decoration: none;
+    font-style: normal;
+    line-height: calc(24 / 16);
+    cursor: pointer;
 }
 
 .address-link:hover,
@@ -154,7 +156,7 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 48px; 
+    margin-bottom: 48px; 
 }
 
 .button-order {
@@ -167,6 +169,7 @@ body {
     color: var(--white-txt-cl);
     padding: 16px 32px;
     border-radius: 4px;
+    border: none;
 } 
 
 .button-order:hover,
@@ -188,7 +191,7 @@ body {
 }
 
 .features-desc {
-    width: 264px;
+    flex-basis: calc((100% - 24*3px) / 4);
 }
 
 .section-mission {
@@ -233,8 +236,11 @@ body {
     background: var(--main-bg-cl);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+}
+
+.team-card-txt {
     text-align: center;
-    padding: 32px 16px;   
+    padding: 32px 0px;   
 }
 
 .header-portfolio {
@@ -278,7 +284,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;  
-    row-gap: 0px;
+    row-gap: 48px;
 }
 
 .img-item {
@@ -310,7 +316,7 @@ body {
 
 .footer-txt {
     width: 264px;
-    padding-top: 16px;
+    margin-top: 16px;
 }
 
 .accent-footer {
