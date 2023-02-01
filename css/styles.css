@@ -113,6 +113,10 @@ body {
     color: var(--accent-bg-cl);
 }
 
+.address {
+    margin-left: auto;  
+}
+
 .address-list {
     color: var(--secondary-txt-cl);
     text-decoration: none;
@@ -288,7 +292,7 @@ body {
 }
 
 .img-item {
-    flex-basis: ((100% - 48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .card-item {
